@@ -1,4 +1,6 @@
-﻿#include "..\mp2-lab4-queue\queue.h"
+﻿
+
+#include "..\mp2-lab4-queue\queue.h"
 
 #include <string>
 #include "gtest.h"

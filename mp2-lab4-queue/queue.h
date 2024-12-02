@@ -60,7 +60,7 @@ public:
 	~Queue();
 	Queue(const Queue& q);
 
-	void operator=(const Queue& q);
+	Queue<T>& operator=(const Queue<T>& q);
 	bool operator==(const Queue& q);
 	bool operator!=(const Queue& q);
 
@@ -125,9 +125,9 @@ Queue<T>::Queue(const Queue<T>& q)     //конструктор копирования
 
 
 template <class T>
-void Queue<T>::operator=(const Queue<T>& q)
+Queue<T>& Queue<T>::operator=(const Queue<T>& q)
 {
-	if (this == &q) 
+	if (this == &q)
 	{
 		// Самоприсваивание: ничего делать не нужно.
 		return *this;
@@ -137,7 +137,7 @@ void Queue<T>::operator=(const Queue<T>& q)
 	head = q.head;
 	tail = q.tail;
 	count = q.count;
-	
+
 	pMem = new T[size];
 	for (int i = 0; i < size; i++)
 	{
@@ -170,10 +170,10 @@ bool Queue<T>::operator==(const Queue<T>& q)	// (???) сравнивать очереди необход
 			this_q.Pop();		// Удаление элементов из временных очередей.
 			q_q.Pop();
 		}
-	
+
 	}
 
-	
+
 	return true;		// Очереди равны.
 }
 

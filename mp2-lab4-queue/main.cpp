@@ -53,6 +53,4 @@ int main()
 
 	queue.Push(80);
 	cout << "очередь: " << queue << endl;
-
 }
-
