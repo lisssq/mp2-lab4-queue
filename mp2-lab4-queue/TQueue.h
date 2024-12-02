@@ -5,10 +5,10 @@
 #include <string>
 #include <cmath>
 
-using namespace std;
+//using namespace std;
 
 template <class T>
-class Queue
+class TQueue
 {
 	T* pMem;	// массив для хранения элементов
 	int size;	// максимальный размер очереди
@@ -17,7 +17,7 @@ class Queue
 	int count;	// текущее кол-во элементов в очереди
 
 
-	//friend istream& operator>>(istream& in, Queue& q)
+	//friend istream& operator>>(istream& in, TQueue& q)
 	//{
 	//	T val;
 	//	cout << "Введите элементы (введите 0 для завершения): ";
@@ -37,11 +37,11 @@ class Queue
 	//}
 
 
-	friend ostream& operator<<(ostream& out, const Queue& q)
+	friend std::ostream& operator<<(std::ostream& out, const TQueue& q)
 	{
 		if (q.isEmpty())
 		{
-			out << "" << endl;
+			out << "" << std::endl;
 			return out;
 		}
 		int index = q.head;
@@ -55,14 +55,14 @@ class Queue
 
 public:
 
-	Queue();
-	Queue(int _size = 10);
-	~Queue();
-	Queue(const Queue& q);
+	TQueue();
+	TQueue(int _size = 10);
+	~TQueue();
+	TQueue(const TQueue& q);
 
-	Queue<T>& operator=(const Queue<T>& q);
-	bool operator==(const Queue& q);
-	bool operator!=(const Queue& q);
+	TQueue<T>& operator=(const TQueue<T>& q);
+	bool operator==(const TQueue& q);
+	bool operator!=(const TQueue& q);
 
 	bool isEmpty() const;
 	bool isFull() const;
@@ -72,7 +72,7 @@ public:
 	T Back() const;
 
 	int GetHeadIndex();//Получить индекс, на котором стоит первый элемент в очереди
-	int MaxSize(); //Получить размер хранилища
+	int GetMaxSize(); //Получить размер хранилища
 	int CountElements();   //Количество элементов в очереди
 	int GetSizeNow(); //Получить текущий размер
 
@@ -81,16 +81,15 @@ public:
 
 
 template <class T>
-Queue<T>::Queue()
+TQueue<T>::TQueue()
 {
 	size = 10;
 }
 
 
 
-
 template <class T>
-Queue<T>::Queue(int _size)
+TQueue<T>::TQueue(int _size)
 {
 	pMem = new T[_size];
 	size = _size;
@@ -103,14 +102,14 @@ Queue<T>::Queue(int _size)
 
 
 template <class T>
-Queue<T>::~Queue()
+TQueue<T>::~TQueue()
 {
 	delete[] pMem;
 }
 
 
 template <class T>
-Queue<T>::Queue(const Queue<T>& q)     //конструктор копирования
+TQueue<T>::TQueue(const TQueue<T>& q)     //конструктор копирования
 {
 	size = q.size;
 	count = q.count;
@@ -125,7 +124,7 @@ Queue<T>::Queue(const Queue<T>& q)     //конструктор копирования
 
 
 template <class T>
-Queue<T>& Queue<T>::operator=(const Queue<T>& q)
+TQueue<T>& TQueue<T>::operator=(const TQueue<T>& q)
 {
 	if (this == &q)
 	{
@@ -150,8 +149,7 @@ Queue<T>& Queue<T>::operator=(const Queue<T>& q)
 
 
 template <class T>
-bool Queue<T>::operator==(const Queue<T>& q)	// (???) сравнивать очереди необходимо по значениям,
-// а не по местам расположения этих элементов
+bool TQueue<T>::operator==(const TQueue<T>& q)	
 {
 	if (size != q.size || count != q.count)
 	{
@@ -159,8 +157,8 @@ bool Queue<T>::operator==(const Queue<T>& q)	// (???) сравнивать очереди необход
 	}
 	else
 	{
-		Queue this_q = *this;	 // Временная копия текущей очереди.
-		Queue q_q = q;			 // Временная копия другой очереди.
+		TQueue this_q = *this;	 // Временная копия текущей очереди.
+		TQueue q_q = q;			 // Временная копия другой очереди.
 		while (!this_q.isEmpty())
 		{
 			if (this_q.Front() != q_q.Front())		// Если хотя бы один элемент отличается, очереди не равны.
@@ -179,26 +177,26 @@ bool Queue<T>::operator==(const Queue<T>& q)	// (???) сравнивать очереди необход
 
 
 template <class T>
-bool Queue<T>::operator!=(const Queue<T>& q)
+bool TQueue<T>::operator!=(const TQueue<T>& q)
 {
 	return!(*this == q);
 }
 
 
 template <class T>
-bool Queue<T>::isEmpty() const
+bool TQueue<T>::isEmpty() const
 {
 	return count == 0;
 }
 
 template <class T>
-bool Queue<T>::isFull() const
+bool TQueue<T>::isFull() const
 {
 	return count == size;
 }
 
 template <class T>
-void Queue<T>::Push(T val)
+void TQueue<T>::Push(T val)
 {
 	if (this->isFull())
 	{
@@ -220,7 +218,7 @@ void Queue<T>::Push(T val)
 }
 
 template <class T>
-T Queue<T>::Pop()
+T TQueue<T>::Pop()
 {
 	if (this->isEmpty())
 	{
@@ -247,7 +245,7 @@ T Queue<T>::Pop()
 }
 
 template <class T>
-T Queue<T>::Front() const
+T TQueue<T>::Front() const
 {
 	if (isEmpty())
 	{
@@ -259,7 +257,7 @@ T Queue<T>::Front() const
 
 
 template <class T>
-T Queue<T>::Back() const
+T TQueue<T>::Back() const
 {
 	if (isEmpty())
 	{
@@ -269,25 +267,25 @@ T Queue<T>::Back() const
 }
 
 template<class T>
-int Queue<T>::GetHeadIndex()
+int TQueue<T>::GetHeadIndex()
 {
 	return head;
 }
 
 template<class T>
-int Queue<T>::MaxSize()
+int TQueue<T>::GetMaxSize()
 {
 	return size;
 }
 
 template<class T>
-int Queue<T>::CountElements()
+int TQueue<T>::CountElements()
 {
 	return count;
 }
 
 template<class T>
-int Queue<T>::GetSizeNow()
+int TQueue<T>::GetSizeNow()
 {
 	return count;
 }

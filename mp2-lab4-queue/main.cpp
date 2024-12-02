@@ -3,14 +3,16 @@
 #include <string>
 #include <cmath>
 #include <locale.h>
-#include "queue.h"
+#include "TQueue.h"
 
 using namespace std;
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	Queue<int> queue(5);
+	
+	
+	TQueue<int> queue(5);
 
 	queue.Push(10);
 	cout << "очередь: " << queue << endl;
@@ -18,6 +20,7 @@ int main()
 	queue.Push(30);
 	queue.Push(40);
 	//queue.Push(50);
+
 
 	/*cout << "первый элемент очереди: " << queue.Front() << endl;
 	cout << "последний элемент очереди: " << queue.Back() << endl;*/
