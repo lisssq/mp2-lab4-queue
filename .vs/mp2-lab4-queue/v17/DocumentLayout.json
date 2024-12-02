@@ -9,6 +9,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{1A861934-1907-4CBA-B803-2CB4BBA584C0}|mp2-lab4-queue\\mp2-lab4-queue.vcxproj|C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\mp2-lab4-queue\\queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1A861934-1907-4CBA-B803-2CB4BBA584C0}|mp2-lab4-queue\\mp2-lab4-queue.vcxproj|solutionrelative:mp2-lab4-queue\\queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9696B190-8A31-45BA-A43E-0287102EF438}|Graphics-EmptyProject-master\\CppWinForm1.vcxproj|C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\Graphics-EmptyProject-master\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9696B190-8A31-45BA-A43E-0287102EF438}|Graphics-EmptyProject-master\\CppWinForm1.vcxproj|solutionrelative:Graphics-EmptyProject-master\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9696B190-8A31-45BA-A43E-0287102EF438}|Graphics-EmptyProject-master\\CppWinForm1.vcxproj|C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\Graphics-EmptyProject-master\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{9696B190-8A31-45BA-A43E-0287102EF438}|Graphics-EmptyProject-master\\CppWinForm1.vcxproj|solutionrelative:Graphics-EmptyProject-master\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9696B190-8A31-45BA-A43E-0287102EF438}|Graphics-EmptyProject-master\\CppWinForm1.vcxproj|C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\Graphics-EmptyProject-master\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9696B190-8A31-45BA-A43E-0287102EF438}|Graphics-EmptyProject-master\\CppWinForm1.vcxproj|solutionrelative:Graphics-EmptyProject-master\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,29 +46,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\mp2-lab4-queue\\main.cpp",
-              "RelativeDocumentMoniker": "mp2-lab4-queue\\main.cpp",
-              "ToolTip": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\mp2-lab4-queue\\main.cpp",
-              "RelativeToolTip": "mp2-lab4-queue\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-23T22:47:16.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "queue.h",
               "DocumentMoniker": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\mp2-lab4-queue\\queue.h",
               "RelativeDocumentMoniker": "mp2-lab4-queue\\queue.h",
               "ToolTip": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\mp2-lab4-queue\\queue.h",
               "RelativeToolTip": "mp2-lab4-queue\\queue.h",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAIcAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAIwA8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-23T22:22:56.68Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyForm.h",
+              "DocumentMoniker": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\Graphics-EmptyProject-master\\MyForm.h",
+              "RelativeDocumentMoniker": "Graphics-EmptyProject-master\\MyForm.h",
+              "ToolTip": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\Graphics-EmptyProject-master\\MyForm.h",
+              "RelativeToolTip": "Graphics-EmptyProject-master\\MyForm.h",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowCwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-28T10:15:24.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\Graphics-EmptyProject-master\\MyForm.h",
+              "RelativeDocumentMoniker": "Graphics-EmptyProject-master\\MyForm.h",
+              "ToolTip": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\Graphics-EmptyProject-master\\MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Graphics-EmptyProject-master\\MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-28T10:14:55.147Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\mp2-lab4-queue\\main.cpp",
+              "RelativeDocumentMoniker": "mp2-lab4-queue\\main.cpp",
+              "ToolTip": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\mp2-lab4-queue\\main.cpp",
+              "RelativeToolTip": "mp2-lab4-queue\\main.cpp",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-23T22:47:16.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyForm.cpp",
+              "DocumentMoniker": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\Graphics-EmptyProject-master\\MyForm.cpp",
+              "RelativeDocumentMoniker": "Graphics-EmptyProject-master\\MyForm.cpp",
+              "ToolTip": "C:\\Users\\\u041B\u0438\u0437\u0430\\Desktop\\me\\\u0412\u0423\u0417\\[\u043F\u043A] \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0438 (\u0431\u0430\u0440\u043A\u0430\u043B\u043E\u0432)\\mp2-lab4-queue\\Graphics-EmptyProject-master\\MyForm.cpp",
+              "RelativeToolTip": "Graphics-EmptyProject-master\\MyForm.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-28T10:14:50.197Z"
             }
           ]
         }

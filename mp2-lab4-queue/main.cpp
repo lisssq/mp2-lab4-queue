@@ -17,18 +17,41 @@ int main()
 	queue.Push(20);
 	queue.Push(30);
 	queue.Push(40);
-	queue.Push(50);
+	//queue.Push(50);
 
-	cout << "первый элемент очереди: " << queue.Front() << endl;
-	cout << "последний элемент очереди: " << queue.Back() << endl;
+	/*cout << "первый элемент очереди: " << queue.Front() << endl;
+	cout << "последний элемент очереди: " << queue.Back() << endl;*/
 
 	cout << "очередь: " << queue << endl;
 
 	queue.Pop();
 	cout << "очередь: " << queue << endl;
 
-	queue.Push(100);
+	queue.Pop();
 	cout << "очередь: " << queue << endl;
 
+
+	queue.Push(50);
+	cout << "очередь: " << queue << endl;
+
+	queue.Push(60);
+	cout << "очередь: " << queue << endl;
+
+	queue.Push(70);
+	cout << "очередь: " << queue << endl;
+
+
+	queue.Pop();
+	cout << "очередь: " << queue << endl;
+
+	queue.Pop();
+	cout << "очередь: " << queue << endl;
+
+	queue.Pop();
+	cout << "очередь: " << queue << endl;
+
+
+	queue.Push(80);
+	cout << "очередь: " << queue << endl;
 
 }
