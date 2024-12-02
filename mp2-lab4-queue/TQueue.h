@@ -255,7 +255,6 @@ T TQueue<T>::Front() const
 }
 
 
-
 template <class T>
 T TQueue<T>::Back() const
 {

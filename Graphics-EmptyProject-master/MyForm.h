@@ -31,13 +31,12 @@ namespace CppWinForm1 {
 		int CenterY = 150;
 		int W = 150;
 		int H = 150;
+
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::Timer^ timer1;
 
 		Random^ rnd = gcnew Random();
-
-
 
 		void Draw()
 		{
@@ -53,8 +52,7 @@ namespace CppWinForm1 {
 		void Clear()
 		{
 			Graphics^ gr = this->CreateGraphics();
-			// Очищаем экран (устанавливаем фон в белый цвет)
-			gr->Clear(Color::PeachPuff);  // или другой цвет фона, если нужно
+			gr->Clear(Color::PeachPuff);  // Очищаем экран (устанавливаем фон в цвет фона)
 
 			int Start = 360 * CircleQueue->GetHeadIndex() / CircleQueue->GetMaxSize();
 			int Finish = 360 * CircleQueue->GetSizeNow() / CircleQueue->GetMaxSize();
@@ -317,7 +315,6 @@ namespace CppWinForm1 {
 
 
 
-
 	
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) 
 {
@@ -325,22 +322,18 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	add = Convert::ToDouble(textBox2->Text);
 	del = Convert::ToDouble(textBox3->Text);
 
-	// Инициализация очереди
-	CircleQueue = new TQueue<int>(maxSize);
+	CircleQueue = new TQueue<int>(maxSize);		// инициализация очереди
 
-	// Сброс счетчиков
-	CountPush = 0;
+	CountPush = 0;								// сброс счетчиков
 	CountPop = 0;
 
-	// Обновление интерфейса
 	label6->Text = CountPush.ToString();
 	label7->Text = CountPop.ToString();
 
-	// Очистка старого изображения (перерисовка фона)
 	Clear();
 
-	// Запуск таймера
-	timer1->Interval = 100; // Частота обновления (мс)
+	// запуск таймера
+	timer1->Interval = 100;						// частота обновления
 	timer1->Enabled = true;
 
 }
@@ -353,41 +346,37 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 
 private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) 
 {
-	// Генерация вероятностей
-	double randAdd = rnd->NextDouble();
+	double randAdd = rnd->NextDouble();			// генерация вероятностей
 	double randDel = rnd->NextDouble();
 
-	// Добавление элемента
-	if (randAdd < add && CircleQueue->GetSizeNow() < CircleQueue->GetMaxSize())
+	if (randAdd < add && CircleQueue->GetSizeNow() < CircleQueue->GetMaxSize())		// добавление элемента
 	{
-		CircleQueue->Push(1); // Добавляем любой элемент, например, 1
+		CircleQueue->Push(1); // добавляем любой элемент, например, 1
 		CountPush++;
 	}
 
-	// Удаление элемента
-	if (randDel < del && CircleQueue->GetSizeNow() > 0)
+	if (randDel < del && CircleQueue->GetSizeNow() > 0)				// удаление элемента
 	{
 		CircleQueue->Pop();
 		CountPop++;
 	}
 
 	// Перерисовка
-	Clear();  // Очистка предыдущего состояния
-	Draw();   // Отрисовка текущего состояния
+	Clear();  // очистка предыдущего состояния
+	Draw();   // отрисовка текущего состояния
 
-	// Обновление интерфейса
+	// обновление интерфейса
 	label6->Text = CountPush.ToString();
 	label7->Text = CountPop.ToString();
 	label8->Text = CircleQueue->GetSizeNow().ToString();
 	label9->Text = "Статус: добавление элементов";
 
-	// Завершение, если очередь заполнена
-	if (CircleQueue->GetSizeNow() == CircleQueue->GetMaxSize())
+
+	if (CircleQueue->GetSizeNow() == CircleQueue->GetMaxSize())		// если очередь заполнена - завершить
 	{
 		timer1->Enabled = false;
 		label9->Text = "Статус: очередь заполнена";
 	}
-
 
 }
 };

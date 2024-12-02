@@ -11,7 +11,6 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	
-	
 	TQueue<int> queue(5);
 
 	queue.Push(10);
