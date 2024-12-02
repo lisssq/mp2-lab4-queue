@@ -30,7 +30,7 @@ namespace CppWinForm1 {
 		int CenterX = 420;
 		int CenterY = 150;
 		int W = 150;
-		int H = 150;
+		int H = 100;
 
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::TextBox^ textBox3;
@@ -43,7 +43,7 @@ namespace CppWinForm1 {
 			int Start = 360 * CircleQueue->GetHeadIndex() / CircleQueue->GetMaxSize();
 			int Finish = 360 * CircleQueue->GetSizeNow() / CircleQueue->GetMaxSize();
 			Pen^ MyDrawPen = gcnew Pen(Color::Turquoise);
-			MyDrawPen->Width = 15.0F;
+			MyDrawPen->Width = 12.0F;
 			Graphics^ gr = this->CreateGraphics();
 			gr->DrawArc(MyDrawPen, CenterX, CenterY, W, H, Start, Finish);
 		}
