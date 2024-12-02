@@ -396,3 +396,17 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Visual Studio-related files
+.vs/
+*.VC.db
+*.VC.db-wal
+*.VC.db-shm
+*.ipch/
+*.pdb
+*.obj
+*.log
+*.tlog
+*.user
+*.suo
+
