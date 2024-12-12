@@ -210,7 +210,7 @@ TEST(TQueue, can_correctly_compare_two_equal_queues)		//сравнение дв�
 	{
 		q1.Push(k);
 	}
-	EXPECT_EQ(true, q == q1);
+	EXPECT_EQ(q1,q);
 }
 
 TEST(TQueue, can_correctly_compare_two_not_equal_queues)		// проверка на неравенство очередей с разным содержимым
@@ -227,7 +227,7 @@ TEST(TQueue, can_correctly_compare_two_not_equal_queues)		// проверка н
 	{
 		q1.Push(k + 1);
 	}
-	EXPECT_EQ(true, q != q1);
+	EXPECT_NE(q,q1);
 }
 
 TEST(TQueue, can_push)		// можно добавить элемент
@@ -258,4 +258,21 @@ TEST(TQueue, can_not_pop_from_Empty_queue)		// нельзя извлечь, пу
 {
 	TQueue<int> q(5);
 	ASSERT_ANY_THROW(q.Pop());
+}
+
+TEST(TQueue, can_compare_queues_with_different_start_positions)
+{
+	TQueue<int> q1(4);
+	TQueue<int> q2(4);
+
+	q1.Push(1);
+	q1.Push(2);
+
+	q2.Push(0);
+	q2.Pop();
+
+	q2.Push(1);
+	q2.Push(2);
+
+	EXPECT_EQ(q1, q2);
 }

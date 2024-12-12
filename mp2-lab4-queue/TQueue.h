@@ -61,8 +61,8 @@ public:
 	TQueue(const TQueue& q);
 
 	TQueue<T>& operator=(const TQueue<T>& q);
-	bool operator==(const TQueue& q);
-	bool operator!=(const TQueue& q);
+	bool operator==(const TQueue& q) const;
+	bool operator!=(const TQueue& q)const;
 
 	bool isEmpty() const;
 	bool isFull() const;
@@ -71,10 +71,10 @@ public:
 	T Front() const;
 	T Back() const;
 
-	int GetHeadIndex();//ѕолучить индекс, на котором стоит первый элемент в очереди
-	int GetMaxSize(); //ѕолучить размер хранилища
-	int CountElements();   // оличество элементов в очереди
-	int GetSizeNow(); //ѕолучить текущий размер
+	int GetHeadIndex();		// получить индекс, на котором стоит первый элемент в очереди
+	int GetMaxSize();		// получить размер хранилища
+	int CountElements();	// количество элементов в очереди
+	int GetSizeNow();		// получить текущий размер
 
 };
 
@@ -97,9 +97,6 @@ TQueue<T>::TQueue(int _size)
 	head = 0;
 	tail = -1;
 }
-
-// реализовать деструктор, конструктор копировани€, оператор сравнени€ (== и !=)
-
 
 template <class T>
 TQueue<T>::~TQueue()
@@ -128,7 +125,6 @@ TQueue<T>& TQueue<T>::operator=(const TQueue<T>& q)
 {
 	if (this == &q)
 	{
-		// —амоприсваивание: ничего делать не нужно.
 		return *this;
 	}
 	delete[] pMem;
@@ -149,7 +145,7 @@ TQueue<T>& TQueue<T>::operator=(const TQueue<T>& q)
 
 
 template <class T>
-bool TQueue<T>::operator==(const TQueue<T>& q)	
+bool TQueue<T>::operator==(const TQueue<T>& q) const
 {
 	if (size != q.size || count != q.count)
 	{
@@ -157,11 +153,11 @@ bool TQueue<T>::operator==(const TQueue<T>& q)
 	}
 	else
 	{
-		TQueue this_q = *this;	 // ¬ременна€ копи€ текущей очереди.
-		TQueue q_q = q;			 // ¬ременна€ копи€ другой очереди.
+		TQueue this_q = *this;	 // временна€ копи€ текущей очереди
+		TQueue q_q = q;			 // временна€ копи€ другой очереди
 		while (!this_q.isEmpty())
 		{
-			if (this_q.Front() != q_q.Front())		// ≈сли хот€ бы один элемент отличаетс€, очереди не равны.
+			if (this_q.Front() != q_q.Front())		// если хот€ бы один элемент отличаетс€, очереди не равны.
 			{
 				return false;
 			}
@@ -170,14 +166,12 @@ bool TQueue<T>::operator==(const TQueue<T>& q)
 		}
 
 	}
-
-
 	return true;		// ќчереди равны.
 }
 
 
 template <class T>
-bool TQueue<T>::operator!=(const TQueue<T>& q)
+bool TQueue<T>::operator!=(const TQueue<T>& q) const
 {
 	return!(*this == q);
 }
@@ -202,17 +196,10 @@ void TQueue<T>::Push(T val)
 	{
 		throw "очередь переполнена"; //проверка на полноту
 	}
-	/*if (tail == size - 1)
-	{
-		tail = 0;
-	}
-	else
-	{
-		tail++;
-	}*/
-	tail = (tail + 1) % size; // «ацикливание индекса.
-	pMem[tail] = val;	// ƒобавление элемента в очередь.
-	count++;			// ”величение количества элементов.
+	
+	tail = (tail + 1) % size; // зацикливание индекса
+	pMem[tail] = val;	// добавление элемента в очередь
+	count++;			// увеличение количества элементов
 
 
 }
@@ -225,18 +212,7 @@ T TQueue<T>::Pop()
 		throw "очередь пуста";
 	}
 	int ind = head;
-	/*
-	if (head == size - 1)
-	{
-		head = 0;
-	}
-	else
-	{
-		head++;
-	}
-	count--;
-	return pMem[ind];*/
-
+	
 	// ќбновл€ем указатель head по кругу
 	head = (head + 1) % size;
 	count--;

@@ -324,13 +324,25 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 
 	CircleQueue = new TQueue<int>(maxSize);		// инициализация очереди
 
-	CountPush = 0;								// сброс счетчиков
+
+	// Добавляем начальные элементы
+	int initialQueueSize = 10;
+	for (int i = 0; i < initialQueueSize; i++)
+	{
+		CircleQueue->Push(0); // Добавляем значение по умолчанию, например, 0
+	}
+	CountPush = initialQueueSize; // Учитываем добавленные элементы
 	CountPop = 0;
+
+
+	//CountPush = 0;								// сброс счетчиков
+	//CountPop = 0;
 
 	label6->Text = CountPush.ToString();
 	label7->Text = CountPop.ToString();
 
 	Clear();
+	Draw();
 
 	// запуск таймера
 	timer1->Interval = 100;						// частота обновления
@@ -349,6 +361,15 @@ private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e)
 	double randAdd = rnd->NextDouble();			// генерация вероятностей
 	double randDel = rnd->NextDouble();
 
+	
+	// проверяем, если вероятность удаления больше вероятности добавления
+	if (del > add && CircleQueue->isEmpty())
+	{
+		label9->Text = "Статус: очередь пуста";
+		timer1->Enabled = false; // Останавливаем таймер, чтобы не было дальнейших попыток
+		return;
+	}
+	
 	if (randAdd < add && CircleQueue->GetSizeNow() < CircleQueue->GetMaxSize())		// добавление элемента
 	{
 		CircleQueue->Push(1); // добавляем любой элемент, например, 1
